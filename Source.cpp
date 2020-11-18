@@ -1,7 +1,7 @@
 #include "Warrior.h"
 #include "Mage.h"
 
-void main()
+int main()
 {
 	Warrior player1("Thor");
 	Mage player2("Jaina");
@@ -11,5 +11,6 @@ void main()
 	player2.heroActions["/shoot_energy"](player2, player1, battle);
 	cout << player1.name << "'s current health: " << player1.health;
 
+	return 0;
 }
 
